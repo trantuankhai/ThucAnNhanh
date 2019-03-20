@@ -1,0 +1,64 @@
+.container-fluid .banner img {
+	width: 100%;
+height: 130px;
+}
+.container .aside{
+
+	width:25%;
+	height: auto;
+	float: left;
+	margin-right: 5px;
+
+
+	margin-top: 5px;
+}
+.container .aside .quanlysanpham, .quanlydanhmuc , .quanlybaiviet , .quanlydonhang , .quanlynguoidung {
+	border: 1px solid black;
+	width: 100%;
+	padding-left: 0px;
+	margin-bottom: 10px;
+	border-radius: 5px;
+}
+.container .aside .quanlysanpham ul li, .quanlydanhmuc ul li,  .quanlybaiviet ul li ,  .quanlydonhang ul li ,  .quanlynguoidung ul li {
+	list-style: none;
+	margin: 3px;
+	border-bottom: 1px solid black;
+
+}
+.container .aside .quanlysanpham ul li a, .quanlydanhmuc ul li a , .quanlybaiviet ul li a , .quanlydonhang ul li a, .quanlynguoidung ul li a  {
+	font-weight: bold;
+	color: black;
+}
+.container.aside .quanlysanpham ul li a:hover, .quanlydanhmuc ul li a:hover , .quanlybaiviet ul li a:hover , .quanlydonhang ul li a:hover, .quanlynguoidung ul li a:hover  {
+text-decoration: none;
+color: green;
+}
+.container .content{
+
+	width: 74%;
+	height:auto;
+	float: right;
+	margin-top: 5px;
+}
+.container .content .sanpham {
+	width: 100%;
+}
+.container-fluid .footer{
+	margin-top: 5px;
+
+	height: 10px;
+	text-align: center;
+
+}
+.clear{
+	clear: both;
+}
+.container .loichao{
+	color:red;
+	float: rigth;
+
+	
+}
+.pagination{
+	float: right;
+}

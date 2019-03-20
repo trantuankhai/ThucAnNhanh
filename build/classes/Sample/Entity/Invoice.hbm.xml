@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Jun 14, 2018 6:56:20 PM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="Sample.Entity.invoice" table="INVOICE">
+        <id name="mahd" type="java.lang.String">
+            <column name="MAHD" length="20" />
+            <generator class="assigned" />
+        </id>
+        <many-to-one name="customer" class="Sample.Entity.customer" fetch="join">
+            <column name="USNAME" not-null="true" />
+        </many-to-one>
+        <set name="detailInvoices" table="DETAIL_INVOICE"  lazy="false" fetch="join">
+            <key>
+                <column name="MAHD" />
+            </key>
+            <one-to-many class="Sample.Entity.detailInvoice" />
+        </set>
+    </class>
+</hibernate-mapping>

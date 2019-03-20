@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Jun 14, 2018 6:56:20 PM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="Sample.Entity.produce" table="PRODUCE">
+        <id name="code" type="java.lang.Integer">
+            <column name="CODE" />
+            <generator class="assigned" />
+        </id>
+        <many-to-one name="categories" class="Sample.Entity.categories" fetch="join">
+            <column name="IDCATEGORIES" />
+        </many-to-one>
+        <property name="title" type="java.lang.String">
+            <column name="TITLE"  length="100" />
+        </property>
+        <property name="price" type="java.lang.Float">
+            <column name="PRICE"  />
+        </property>
+        <property name="images" type="java.lang.String">
+            <column name="IMAGES" length="100" />
+        </property>
+        <set name="detailInvoices" table="DETAIL_INVOICE" lazy="false" fetch="join">
+            <key>
+                <column name="MASP" />
+            </key>
+            <one-to-many class="Sample.Entity.detailInvoice" />
+        </set>
+    </class>
+</hibernate-mapping>

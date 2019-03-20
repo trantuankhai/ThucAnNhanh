@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Jun 14, 2018 6:56:20 PM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="Sample.Entity.customer" table="CUSTOMER">
+        <id name="usname" type="java.lang.String">
+            <column name="USNAME" length="50" />
+            <generator class="assigned" />
+        </id>
+        <property name="pass" type="java.lang.String">
+            <column name="PASS" length="10" />
+        </property>
+        <property name="fullname" type="java.lang.String">
+            <column name="FULLNAME" length="20" />
+        </property>
+        <property name="isAdmin" type="java.lang.Integer">
+            <column name="isAdmin" />
+        </property>
+        <property name="diachi" type="java.lang.String">
+            <column name="DIACHI" length="50" />
+        </property>
+        <property name="sdt" type="java.lang.String">
+            <column name="SDT" length="12" />
+        </property>
+        <property name="email" type="java.lang.String">
+            <column name="EMAIL" length="50" />
+        </property>
+        <set name="invoices" table="INVOICE"  lazy="false" fetch="join">
+            <key>
+                <column name="USNAME" not-null="true" />
+            </key>
+            <one-to-many class="Sample.Entity.invoice" />
+        </set>
+    
+    </class>
+</hibernate-mapping>

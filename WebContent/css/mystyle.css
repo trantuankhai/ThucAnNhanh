@@ -1,0 +1,289 @@
+* {
+	padding: 0px;
+	margin: 0px;
+}
+
+.container .row {
+	padding-bottom: 10px;
+}
+
+.nav1 {
+	background-color: #cc3300;
+	border: none;
+	border-radius: 0px;
+}
+
+.navbar-right a {
+	color: white;
+}
+
+.navbar-default .navbar-nav>li>a {
+	color: white;
+	font-size: 10px;
+}
+
+.nav2 {
+	border: none;
+	background-color: #e7e7e7;
+}
+
+.clear {
+	clear: both;
+}
+
+.row {
+	margin-bottom: 0px;
+}
+
+.navbar-form {
+	padding: 25px 180px;
+}
+
+.btn-success {
+	line-height: 15px;
+	width: 80px;
+}
+
+.form-control {
+	height: 30px;
+}
+
+.navbar-header .img-responsive {
+	padding-left: 200px;
+}
+
+.row .menu {
+	background-color: pink;
+}
+
+.menu>ul>li {
+	display: inline-block;
+	list-style: none;
+	padding: 15px;
+}
+
+.menu  ul li a {
+	display: block;
+	font-weight: bold;
+	color: black;
+}
+
+.row .danhmuc {
+	width: 25%;
+	float: left;
+	border: 1px solid #e7e7e7;
+}
+
+.row .danhmuc ul li {
+	list-style: none;
+	margin-bottom: 13px;
+	border-bottom: 1px solid #e7e7e7;
+	padding-bottom: 20px;
+}
+
+.row .danhmuc ul li a {
+	font-size: 16px;
+	color: black;
+	padding-left: 20px;
+	padding-bottom: 20px;
+}
+
+.row .danhmuc ul li a:hover {
+	text-decoration: none;
+	color: #cc3300;
+}
+
+.row .slider {
+	width: 74%;
+	float: left;
+	margin-left: 3px;
+}
+
+.row .slider img {
+	height: 331px;
+	width: 100%;
+}
+
+ul>li>.headingdanhmuc {
+	background-color: #cc3300;
+}
+
+.glyphicon {
+	display: block;
+}
+
+.container .row .col-md-3 .thumbnail  .caption {
+	position: relative;
+}
+
+.container .row .col-md-3 .thumbnail  .caption .title {
+	font-weight: bold;
+	color: black;
+	text-align: center;
+	margin-bottom: 0px;
+}
+
+.container .row .col-md-3 .thumbnail  .caption .price {
+	font-weight: bold;
+	color: red;
+	text-align: center;
+	margin-bottom: 0px;
+}
+
+.container .row .col-md-3 .thumbnail   .btn-cart {
+	position: absolute;
+	width: 30px;
+	height: 30px;
+	float: right;
+	background-repeat: no-repeat;
+	background-image: url('btn-mua.png');
+	top: 26px;
+	right: -4px;
+}
+
+.container .row .colum1 {
+	width: 25%;
+	float: left;
+}
+
+.container .row .colum1 .login {
+	border: 1px solid black;
+	margin-bottom: 10px;
+	border-radius: 5px;
+}
+
+.container .row .login .form {
+	margin: 10px;
+}
+
+.container .row .colum1 .mxh {
+	border: 1px solid black;
+	margin-bottom: 10px;
+	border-radius: 5px;
+}
+
+.container .row .colum1 .tinthucpham {
+	border: 1px solid black;
+	margin-bottom: 10px;
+	border-radius: 5px;
+}
+
+.container .row .colum1 .tinthucpham ul li {
+	list-style: none;
+	border-bottom: 1px solid black;
+	padding: 10px;
+}
+
+.container .row .colum1 .tinthucpham ul li a {
+	font-size: 16px;
+	color: black;
+	padding-left: 20px;
+	padding-bottom: 20px;
+	text-align: justify;
+}
+
+.container .row .colum1 .tinthucpham ul li a:hover {
+	text-decoration: none;
+	color: green;
+}
+
+.container .row .login .form input[type="password"] {
+	margin-bottom: 10px;
+}
+
+.container .row .colum2 {
+	width: 75%;
+	float: left;
+}
+
+.container .row .danhmuc1 {
+	border-bottom: 1px solid black;
+	font-weight: bold;
+	font-size: 20px;
+	width: 145px;
+	background-color: #cc3300;
+	border-top-right-radius: 20px;
+	color: white;
+}
+
+.container .row .danhmuc2 {
+	border-bottom: 1px solid black;
+	font-weight: bold;
+	font-size: 20px;
+	width: 94px;
+	background-color: #cc3300;
+	border-top-right-radius: 20px;
+	color: white;
+}
+
+.container .row .danhmuc3 {
+	border-bottom: 1px solid black;
+	font-weight: bold;
+	font-size: 20px;
+	width: 122px;
+	background-color: #cc3300;
+	border-top-right-radius: 20px;
+	color: white;
+}
+
+.container .row .danhmuc4 {
+	border-bottom: 1px solid black;
+	font-weight: bold;
+	font-size: 20px;
+	width: 126px;
+	background-color: #cc3300;
+	border-top-right-radius: 20px;
+	color: white;
+}
+
+.container-fluid .row .footer {
+	position: relative;
+	width: 100%;
+	height: 180px;
+	background-color: #E7E3E2;
+}
+
+.container-fluid .row .footer .thongtincongty {
+	position: absolute;
+	width: 50%;
+	float: left;
+	margin-left: 170px;
+	margin-top: 30px;
+}
+
+.container-fluid .row .footer .thongtincongty .title {
+	font-weight: bold;
+}
+
+.container-fluid .row .footer .danhmucsanpham {
+	width: 50%;
+	float: right;
+	margin-top: 30px;
+}
+
+.container-fluid .row .footer .danhmucsanpham .title {
+	font-weight: bold;
+}
+
+.container-fluid   .row .footer .danhmucsanpham .danhmucfooter ul li {
+	list-style: none;
+	color: black;
+	padding: 3px;
+}
+
+.container-fluid   .row .footer .danhmucsanpham .danhmucfooter ul li a {
+	color: black;
+}
+
+.container-fluid   .row .footer .danhmucsanpham .danhmucfooter ul li a:hover
+	{
+	color: green;
+}
+
+.container .row  .col-md-3 .thumbnail a img {
+	max-height: 134px;
+}
+
+.thumbnail:hover {
+	border: 1px solid red;
+}

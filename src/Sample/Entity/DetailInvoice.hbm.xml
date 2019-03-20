@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Jun 14, 2018 6:56:20 PM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="Sample.Entity.detailInvoice" table="DETAIL_INVOICE">
+        <id name="code" type="java.lang.Integer">
+            <column name="CODE" />
+            <generator class="assigned" />
+        </id>
+        <many-to-one name="invoice" class="Sample.Entity.invoice" fetch="join">
+            <column name="MAHD" length="20" />
+        </many-to-one>
+        <many-to-one name="produce" class="Sample.Entity.produce" fetch="join">
+            <column name="MASP" />
+        </many-to-one>
+        <property name="price" type="java.lang.Float">
+            <column name="PRICE"  />
+        </property>
+        <property name="quantity" type="java.lang.Integer">
+            <column name="QUANTITY" />
+        </property>
+        <property name="total" type="java.lang.Float">
+            <column name="TOTAL" />
+        </property>
+    </class>
+</hibernate-mapping>
